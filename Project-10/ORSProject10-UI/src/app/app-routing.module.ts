@@ -39,7 +39,6 @@ import { CustomerComponent } from './customer/customer.component';
 import { CustomerlistComponent } from './customer/customer-list.component';
 
 
-
 const routes: Routes = [
     {
         path: '',
@@ -51,51 +50,40 @@ const routes: Routes = [
         component: DashboardComponent
     },
 
-
     // ***********CUSTOMER*************
 
     {
         path: 'customer',
         component: CustomerComponent
-
     },
     {
         path: 'customerlist',
         component: CustomerlistComponent
-
     },
     {
         path: 'customet/:id',
         component: CustomerComponent
-
     },
-
-
-   
 
     // ***********PRODUCT*************
 
     {
         path: 'product',
         component: ProductComponent
-
     },
     {
         path: 'productlist',
         component: ProductListComponent
-
     },
     {
         path: 'product/:id',
         component: ProductComponent
-
     },
 
     // ======================================
     {
         path: 'loader',
         component: LoaderComponent
-
     },
     {
         path: 'login',
@@ -117,7 +105,6 @@ const routes: Routes = [
     {
         path: 'message',
         component: MessageComponent,
-
     },
     {
         path: 'message/:id',
@@ -126,129 +113,102 @@ const routes: Routes = [
     {
         path: 'messagelist',
         component: MessageListComponent
-
     },
     {
         path: 'marksheet',
         component: MarksheetComponent
-
     },
     {
         path: 'marksheet/:id',
         component: MarksheetComponent
-
     },
     {
         path: 'marksheetlist',
         component: MarksheetListComponent
-
     },
     {
         path: 'marksheetmeritlist',
         component: MarksheetmeritListComponent
-
     },
     {
         path: 'getmarksheet',
         component: GetmarksheetComponent
-
     },
     {
         path: 'college',
         component: CollegeComponent
-
     },
     {
         path: 'college/:id',
         component: CollegeComponent
-
     },
     {
         path: 'collegelist',
         component: CollegeListComponent
-
     },
     {
         path: 'student',
         component: StudentComponent
-
     },
     {
         path: 'student/:id',
         component: StudentComponent
-
     },
     {
         path: 'studentlist',
         component: StudentListComponent
-
     },
     {
         path: 'user',
         component: UserComponent
-
     },
     {
         path: 'user/:id',
         component: UserComponent
-
     },
     {
         path: 'userlist',
         component: UserListComponent
-
     },
     {
         path: 'role',
         component: RoleComponent
-
     },
     {
         path: 'rolelist',
         component: RoleListComponent
-
     },
     {
         path: 'role/:id',
         component: RoleComponent
-
     },
     {
         path: 'course',
         component: CourseComponent
-
     },
     {
         path: 'courselist',
         component: CourseListComponent
-
     },
     {
         path: 'course/:id',
         component: CourseComponent
-
     },
     {
-
         path: 'faculty',
         component: FacultyComponent
-
     },
     {
         path: 'facultylist',
         component: FacultyListComponent
-
     },
     {
         path: 'faculty/:id',
         component: FacultyComponent
-
     },
     {
         path: 'timetable',
         component: TimetableComponent
-
-
     },
     {
         path: 'timetablelist',
@@ -289,11 +249,6 @@ const routes: Routes = [
 
 
     },
-    
-
-
-
-
 ];
 
 @NgModule({
