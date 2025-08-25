@@ -79,7 +79,7 @@ public abstract class BaseDAOImpl<T extends BaseDTO> implements BaseDAOInt<T> {
 	public T findByPK(long pk, UserContext userContext) {
 		T dto = entityManager.find(getDTOClass(), pk);
 		return dto;
-	} 
+	}
 
 	/**
 	 * Build criteria query
@@ -116,7 +116,7 @@ public abstract class BaseDAOImpl<T extends BaseDTO> implements BaseDAOInt<T> {
 		cq.orderBy(orderBys.toArray(new Order[orderBys.size()]));
 
 		TypedQuery<T> query = entityManager.createQuery(cq);
-		return query;	
+		return query;
 
 	}
 
@@ -144,7 +144,7 @@ public abstract class BaseDAOImpl<T extends BaseDTO> implements BaseDAOInt<T> {
 			query.setMaxResults(pageSize);
 		}
 
-		List list = query.getResultList();	
+		List list = query.getResultList();
 
 		return list;
 	}
@@ -213,9 +213,9 @@ public abstract class BaseDAOImpl<T extends BaseDTO> implements BaseDAOInt<T> {
 		dto.setModifiedBy(userContext.getLoginId());
 		dto.setModifiedDatetime(new Timestamp(new Date().getTime()));
 
-			populate(dto, userContext);
-	
-			entityManager.merge(dto);
+		populate(dto, userContext);
+
+		entityManager.merge(dto);
 
 	}
 
@@ -253,7 +253,7 @@ public abstract class BaseDAOImpl<T extends BaseDTO> implements BaseDAOInt<T> {
 
 	/**
 	 * Check empty string
-	 * 			
+	 * 
 	 * @param val
 	 * @return
 	 */
@@ -304,14 +304,14 @@ public abstract class BaseDAOImpl<T extends BaseDTO> implements BaseDAOInt<T> {
 	 * @param qRoot
 	 * @return
 	 */
-	protected List<Order> getOrderByClause(T dto, CriteriaBuilder builder, Root<T> qRoot){
+	protected List<Order> getOrderByClause(T dto, CriteriaBuilder builder, Root<T> qRoot) {
 
 		// Apply Order by clause
 		System.out.println("baseDAO in getOrderByClause.......vipin ");
 		LinkedHashMap<String, String> map = dto.orderBY();
 
 		List<Order> orderBys = new ArrayList<Order>();
-
+		System.out.println("map=" + map);
 		map.forEach((key, value) -> {
 			if (value.equals("asc")) {
 				System.out.println("in if value equals asc");
@@ -320,8 +320,6 @@ public abstract class BaseDAOImpl<T extends BaseDTO> implements BaseDAOInt<T> {
 				orderBys.add(builder.desc(qRoot.get(key)));
 			}
 		});
-
 		return orderBys;
 	}
-
 }

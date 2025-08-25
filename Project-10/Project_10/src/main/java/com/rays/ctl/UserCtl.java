@@ -83,20 +83,6 @@ public class UserCtl extends BaseCtl<UserForm, UserDTO, UserServiceInt> {
 		return res;
 	}
 
-	
-	/*
-	 * @GetMapping("logout") public ORSResponse logout(HttpServletRequest request,
-	 * HttpServletResponse response) { System.out.println("logout runnnnn");
-	 * HttpSession session = request.getSession(); session.invalidate();
-	 * 
-	 * // request.getSession().invalidate(); //
-	 * System.out.println(request.getSession().getId() + "session id aftr //
-	 * invalidate"); System.out.println(session.getId() +
-	 * "session id aftr invalidate --->"+ session.getAttribute("test"));
-	 * 
-	 * ORSResponse res = new ORSResponse(true); res.addMessage("logout Suceessss");
-	 * return res; }
-	 */
 
 	/**
 	 * Updates profile of logged in user

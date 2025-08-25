@@ -21,6 +21,7 @@ com\rays\service\UserServiceImpl.class
 com\rays\ctl\JasperCtl.class
 com\rays\form\UserRegistrationForm.class
 com\rays\dao\UserDAOImpl.class
+com\rays\dto\EmployeeDTO.class
 com\rays\service\MarksheetServiceImpl.class
 com\rays\common\message\MessageCtl.class
 com\rays\ctl\CollegeCtl.class
@@ -37,6 +38,7 @@ com\rays\ctl\RoleCtl.class
 com\rays\service\RoleServiceImpl.class
 com\rays\common\message\MessageDAOImpl.class
 com\rays\service\JasperServiceInt.class
+com\rays\form\EmployeeForm.class
 com\rays\ctl\MarksheetCtl.class
 com\rays\service\JasperServiceImpl.class
 com\rays\dao\CourseDAOImpl.class
@@ -46,6 +48,8 @@ com\rays\service\SubjectServiceInt.class
 com\rays\common\attachment\AttachmentSummaryDTO.class
 com\rays\dto\MarksheetDTO.class
 com\rays\dao\RoleDAOInt.class
+com\rays\service\EmployeeServiceImpl.class
+com\rays\dao\EmployeeDAOImpl.class
 com\rays\common\attachment\AttachmentBaseDTO.class
 com\rays\service\CollegeServiceInt.class
 com\rays\dto\FacultyDTO.class
@@ -70,8 +74,10 @@ com\rays\service\CustomerServiceImpl.class
 com\rays\service\StudentServiceImpl.class
 com\rays\common\BaseCtl.class
 com\rays\ctl\LoginCtl.class
+com\rays\ctl\EmployeeCtl.class
 com\rays\service\CourseServiceInt.class
 com\rays\common\message\MessageDTO.class
+com\rays\dao\EmployeeDAOInt.class
 com\rays\dao\SubjectDAOInt.class
 com\rays\dto\CartDTO.class
 com\rays\form\CollegeForm.class
@@ -118,6 +124,7 @@ com\rays\exception\DuplicateRecordException.class
 com\rays\common\BaseServiceImpl.class
 com\rays\common\UserContext.class
 com\rays\dto\UserDTO.class
+com\rays\service\EmployeeServiceInt.class
 com\rays\dto\CollegeDTO.class
 com\rays\form\ChangePasswordForm.class
 com\rays\form\ItemForm.class

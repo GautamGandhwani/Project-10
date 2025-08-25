@@ -55,7 +55,6 @@ public class LoginCtl extends BaseCtl<UserForm, UserDTO, UserServiceInt> {
 	@Autowired
 	private JWTUtil jwtUtil;
 
-
 	@Autowired
 	AttachmentServiceInt attachmentService;
 
@@ -136,7 +135,7 @@ public class LoginCtl extends BaseCtl<UserForm, UserDTO, UserServiceInt> {
 		}
 		ORSResponse res = new ORSResponse(true);
 		UserDTO dto = this.baseService.forgotPassword(login);
-		if (dto == null){
+		if (dto == null) {
 			res.setSuccess(false);
 			res.addMessage("Invalid Login Id");
 		} else {
@@ -303,5 +302,4 @@ public class LoginCtl extends BaseCtl<UserForm, UserDTO, UserServiceInt> {
 		res.setSuccess(true);
 		return res;
 	}
-
 }

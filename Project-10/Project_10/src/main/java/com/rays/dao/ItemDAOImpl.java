@@ -50,7 +50,6 @@ public class ItemDAOImpl extends BaseDAOImpl<ItemDTO> implements ItemDAOInt {
 
 	@Override
 	public Class<ItemDTO> getDTOClass(){
-		// TODO Auto-generated method stub
 		return ItemDTO.class;
 	}
 
