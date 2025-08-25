@@ -47,18 +47,7 @@ export class NavbarComponent implements OnInit {
 
   };
   ngOnInit() {
-    // var _self = this;
-    // this.httpService.get("http://localhost:8080/Auth/menu",function (res){
 
-    //   if(res.success){
-    //     _self.form.list = res.result.list;
-
-    //   }else{
-    //     _self.form.error = false;
-    //     _self.form.message = res.result.message;
-    //   }
-    //   console.log('FORM', _self.form);
-    // });
   }
 
   forward() {
@@ -84,10 +73,10 @@ export class NavbarComponent implements OnInit {
     }
   }
   goToLink() {
-     window.open('assets/doc/index.html','_blank');
+    window.open('assets/doc/index.html', '_blank');
   }
   logout() {
-   
+
     var _self = this;
     console.log('Logout', this.form);
     _self.httpService.get("http://localhost:8084/User/logout", function (res) {
@@ -96,10 +85,7 @@ export class NavbarComponent implements OnInit {
       if (res.success) {
         localStorage.clear();
         _self.form.message = res.result.message;
-        
       };
-
     });
-
   }
 }

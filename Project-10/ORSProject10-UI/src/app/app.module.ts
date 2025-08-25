@@ -48,6 +48,7 @@ import { ChangepasswordComponent } from "./user/changepassword.component";
 import { LoaderComponent } from "./loader/loader.component";
 import { NavbarComponent } from './navbar/navbar.component';
 
+import { SpinnerComponent } from './spinner/spinner.component';
 import { FooterComponent } from './footer/footer.component';
 import { AuthService } from './auth.service';
 import { MyprofileComponent } from './user/myprofile.component';
@@ -55,10 +56,8 @@ import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product/product-list.component';
 import { CustomerComponent } from './customer/customer.component';
 import { CustomerlistComponent } from './customer/customer-list.component';
-
-
-
-
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeListComponent } from './employee/employee-list.component';
 
 
 
@@ -105,14 +104,15 @@ export function myHttpLoader(http: HttpClient) {
     LoaderComponent,
     FileComponent,
     NavbarComponent,
+    SpinnerComponent,
     FooterComponent,
     MyprofileComponent,
     ProductComponent,
     ProductListComponent,
     CustomerComponent,
-    CustomerlistComponent
- 
-
+    CustomerlistComponent,
+    EmployeeComponent,
+    EmployeeListComponent,
     
   ],
   imports: [

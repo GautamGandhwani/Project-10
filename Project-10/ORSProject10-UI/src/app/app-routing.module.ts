@@ -1,5 +1,5 @@
 
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { MarksheetComponent } from './marksheet/marksheet.component';
@@ -32,11 +32,14 @@ import { MarksheetmeritListComponent } from "./marksheet/marksheetmerit-list.com
 import { GetmarksheetComponent } from "./marksheet/getmarksheet.component";
 import { ChangepasswordComponent } from "./user/changepassword.component";
 import { LoaderComponent } from './loader/loader.component';
+import { SpinnerComponent } from './spinner/spinner.component';
 import { MyprofileComponent } from './user/myprofile.component';
 import { ProductComponent } from './product/product.component';
 import { ProductListComponent } from './product/product-list.component';
 import { CustomerComponent } from './customer/customer.component';
 import { CustomerlistComponent } from './customer/customer-list.component';
+import { EmployeeComponent } from './employee/employee.component';
+
 
 
 const routes: Routes = [
@@ -50,40 +53,55 @@ const routes: Routes = [
         component: DashboardComponent
     },
 
+    // ***********EMPLOYEE*************
+    {
+        path: 'employee',
+        component:EmployeeComponent
+    },
     // ***********CUSTOMER*************
 
     {
         path: 'customer',
         component: CustomerComponent
+
     },
     {
         path: 'customerlist',
         component: CustomerlistComponent
+
     },
     {
         path: 'customet/:id',
         component: CustomerComponent
+
     },
+
+
+
 
     // ***********PRODUCT*************
 
     {
         path: 'product',
         component: ProductComponent
+
     },
     {
         path: 'productlist',
         component: ProductListComponent
+
     },
     {
         path: 'product/:id',
         component: ProductComponent
+
     },
 
     // ======================================
     {
         path: 'loader',
         component: LoaderComponent
+
     },
     {
         path: 'login',
@@ -93,6 +111,11 @@ const routes: Routes = [
     {
         path: 'login/:userparams',
         component: LoginComponent
+    },
+
+    {
+        path: 'spinner',
+        component: SpinnerComponent
     },
     {
         path: 'forgotpassword',
@@ -105,6 +128,7 @@ const routes: Routes = [
     {
         path: 'message',
         component: MessageComponent,
+
     },
     {
         path: 'message/:id',
@@ -113,102 +137,129 @@ const routes: Routes = [
     {
         path: 'messagelist',
         component: MessageListComponent
+
     },
     {
         path: 'marksheet',
         component: MarksheetComponent
+
     },
     {
         path: 'marksheet/:id',
         component: MarksheetComponent
+
     },
     {
         path: 'marksheetlist',
         component: MarksheetListComponent
+
     },
     {
         path: 'marksheetmeritlist',
         component: MarksheetmeritListComponent
+
     },
     {
         path: 'getmarksheet',
         component: GetmarksheetComponent
+
     },
     {
         path: 'college',
         component: CollegeComponent
+
     },
     {
         path: 'college/:id',
         component: CollegeComponent
+
     },
     {
         path: 'collegelist',
         component: CollegeListComponent
+
     },
     {
         path: 'student',
         component: StudentComponent
+
     },
     {
         path: 'student/:id',
         component: StudentComponent
+
     },
     {
         path: 'studentlist',
         component: StudentListComponent
+
     },
     {
         path: 'user',
         component: UserComponent
+
     },
     {
         path: 'user/:id',
         component: UserComponent
+
     },
     {
         path: 'userlist',
         component: UserListComponent
+
     },
     {
         path: 'role',
         component: RoleComponent
+
     },
     {
         path: 'rolelist',
         component: RoleListComponent
+
     },
     {
         path: 'role/:id',
         component: RoleComponent
+
     },
     {
         path: 'course',
         component: CourseComponent
+
     },
     {
         path: 'courselist',
         component: CourseListComponent
+
     },
     {
         path: 'course/:id',
         component: CourseComponent
+
     },
     {
+
         path: 'faculty',
         component: FacultyComponent
+
     },
     {
         path: 'facultylist',
         component: FacultyListComponent
+
     },
     {
         path: 'faculty/:id',
         component: FacultyComponent
+
     },
     {
         path: 'timetable',
         component: TimetableComponent
+
+
     },
     {
         path: 'timetablelist',
@@ -249,6 +300,11 @@ const routes: Routes = [
 
 
     },
+
+
+
+
+
 ];
 
 @NgModule({
