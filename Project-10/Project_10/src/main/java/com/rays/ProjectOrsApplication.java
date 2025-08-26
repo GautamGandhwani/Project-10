@@ -29,7 +29,6 @@ public class ProjectOrsApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectOrsApplication.class, args);
-
 	}
 
 	/**
@@ -69,9 +68,7 @@ public class ProjectOrsApplication extends SpringBootServletInitializer {
 			public void addResourceHandlers(ResourceHandlerRegistry registry) {
 				registry.addResourceHandler("/**").addResourceLocations("classpath:/public/");
 			}
-
 		};
-
 		return w;
 	}
 }

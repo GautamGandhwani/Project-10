@@ -43,42 +43,36 @@ public class UserDAOImpl extends BaseDAOImpl<UserDTO> implements UserDAOInt {
 		List<Predicate> whereCondition = new ArrayList<Predicate>();
 
 		if (!isEmptyString(dto.getFirstName())) {
-
 			whereCondition.add(builder.like(qRoot.get("firstName"), dto.getFirstName() + "%"));
 		}
+		
 		if (!isEmptyString(dto.getLastName())) {
-
 			whereCondition.add(builder.like(qRoot.get("lastName"), dto.getLastName() + "%"));
 		}
 
 		if (!isEmptyString(dto.getRoleName())) {
-
 			whereCondition.add(builder.like(qRoot.get("roleName"), dto.getRoleName() + "%"));
 		}
+		
 		if (!isEmptyString(dto.getLoginId())) {
-
 			whereCondition.add(builder.equal(qRoot.get("loginId"), dto.getLoginId()));
 		}
+		
 		if (!isEmptyString(dto.getPassword())) {
-
 			whereCondition.add(builder.equal(qRoot.get("password"), dto.getPassword()));
 		}
 
 		if (!isEmptyString(dto.getStatus())) {
-
 			whereCondition.add(builder.equal(qRoot.get("status"), dto.getStatus()));
 		}
 
 		if (!isZeroNumber(dto.getRoleId())) {
-
 			whereCondition.add(builder.equal(qRoot.get("roleId"), dto.getRoleId()));
 		}
 
 		if (isNotNull(dto.getDob())) {
-
 			whereCondition.add(builder.equal(qRoot.get("dob"), dto.getDob()));
 		}
-
 		return whereCondition;
 	}
 
@@ -138,7 +132,5 @@ public class UserDAOImpl extends BaseDAOImpl<UserDTO> implements UserDAOInt {
 		}
 		System.out.println("going to return dto");
 		return dto;
-
 	}
-
 }

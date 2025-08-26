@@ -173,5 +173,4 @@ public abstract class BaseDTO implements Serializable, DropdownList, Comparable<
 		}
 		return buffer.toString();
 	}
-
 }
