@@ -1,4 +1,4 @@
-	package com.rays.common;
+package com.rays.common;
 
 import java.io.Serializable;
 import java.lang.reflect.Method;
