@@ -267,13 +267,11 @@ public class UserDTO extends BaseDTO {
 
 	@Override
 	public String getUniqueValue() {
-		// TODO Auto-generated method stub
 		return loginId;
 	}
 	
 	@Override
 	public String getLabel() {
-		// TODO Auto-generated method stub
 		return "Login Id";
 	}
 
