@@ -94,9 +94,10 @@
           <a class="dropdown-item" [routerLink]="['/customerlist']"><i class="fa fa-building"></i> &nbsp;
             {{ "Customer List" | translate }}
           </a>
-        </div> 
+        </div>
+      </li>
 
-    <!-- =================================== USER =========================================== -->
+      <!-- =================================== USER =========================================== -->
 
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
@@ -111,6 +112,9 @@
             translate }}</a>
         </div>
       </li>
+
+      <!-- ========================================MARKSHEET======================================  -->
+
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -128,6 +132,9 @@
             {{ "Get Marksheet" | translate }}</a>
         </div>
       </li>
+
+      <!-- ========================================ROLE======================================  -->
+
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -140,6 +147,9 @@
             translate }}</a>
         </div>
       </li>
+
+      <!-- ========================================COLLEGE======================================  -->
+
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -153,6 +163,9 @@
           </a>
         </div>
       </li>
+
+      <!-- ========================================COURSE======================================  -->
+
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -166,6 +179,9 @@
           </a>
         </div>
       </li>
+
+      <!-- ========================================STUDENT======================================  -->
+
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -175,12 +191,12 @@
           <a class="dropdown-item" [routerLink]="['/student']"><i class="fa fa-user"></i> &nbsp;
             {{ "Add Student" | translate }}</a>
           <a class="dropdown-item" [routerLink]="['/studentlist']"><i class="fa fa-users"></i> &nbsp;
-            {{
-            "Student
-            List" | translate
-            }}</a>
+            {{ "Student List" | translate}}</a>
         </div>
       </li>
+
+      <!-- ========================================FACULTY======================================  -->
+
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -190,11 +206,11 @@
           <a class="dropdown-item" [routerLink]="['/faculty']"><i class="fa fa-users"></i> &nbsp;
             {{ "Add Faculty" | translate }}</a>
           <a class="dropdown-item" [routerLink]="['/facultylist']"><i class="fa fa-list"></i> &nbsp;
-            {{
-            "Faculty
-            List" | translate
-            }}</a>
+            {{"Faculty List" | translate }}</a>
         </div>
+
+        <!-- ========================================TIMETABLE======================================  -->
+
       </li>
 
       <li class="nav-item dropdown" style="padding-left: 5px">
@@ -209,6 +225,9 @@
             {{ "TimeTable List" | translate }}</a>
         </div>
       </li>
+
+      <!-- ========================================SUBJECT======================================  -->
+
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -226,6 +245,8 @@
           </a>
         </div>
       </li>
+
+      <!-- ========================================AFTER LOGIN======================================  -->
 
       <li class="nav-item dropdown" style="padding-left: 5px">
         <a class="nav-link dropdown-toggle" [routerLink]="['/#']" id="navbarDropdown" role="button"
