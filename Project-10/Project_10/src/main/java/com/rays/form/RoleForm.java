@@ -1,4 +1,4 @@
-	package com.rays.form;
+package com.rays.form;
 
 import javax.validation.constraints.NotEmpty;
 

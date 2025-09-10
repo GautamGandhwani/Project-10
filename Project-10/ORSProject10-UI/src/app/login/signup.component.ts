@@ -93,9 +93,7 @@ export class SignUpComponent implements OnInit {
 
         _self.form.inputerror = res.result.inputerror;
 
-
       }
-
     });
   }
 }

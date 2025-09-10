@@ -143,7 +143,7 @@ background-size: 100%;
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-table grey-text"></i> </div>
+                  <div class="input-group-text"><i class="fa fa-calendar grey-text"></i> </div>
                 </div>
                 <input type="date" name="dob" [(ngModel)]="form.data.dob" class="form-control">
               </div>
@@ -159,7 +159,7 @@ background-size: 100%;
             <div class="col-sm-12">
               <div class="input-group">
                 <div class="input-group-prepend">
-                  <div class="input-group-text"><i class="fa fa-venus grey-text"></i> </div>
+                  <div class="input-group-text"><i class="fa fa-venus-mars grey-text"></i> </div>
                 </div>
                 <select class="form-control" name="gender" id="gender" [(ngModel)]="form.data.gender"
                   style="cursor: pointer;">
@@ -182,16 +182,9 @@ background-size: 100%;
             </div>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <div class="pt-2">
-
               <a class="btn btn-warning mr-1" [routerLink]="['/signup']" (click)="exit()">{{'Reset' | translate}}</a>
-
-
             </div>
           </div>
-
-
-
-
         </form>
       </div>
     </div>
