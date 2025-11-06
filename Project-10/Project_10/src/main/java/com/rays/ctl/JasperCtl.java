@@ -77,19 +77,27 @@ public class JasperCtl extends BaseCtl<MarksheetForm, MarksheetDTO, MarksheetSer
 	 * @throws IOException  Signals that an I/O exception has occurred.
 	 */
 	@GetMapping(value = "report", produces = { MediaType.APPLICATION_JSON_VALUE })
-	public void display(HttpServletRequest request, HttpServletResponse response)throws JRException, SQLException, IOException {
+	public void display(HttpServletRequest request, HttpServletResponse response)
+			throws JRException, SQLException, IOException {
 		System.out.println("********************** Jasper Ctl*********************");
 		ORSResponse res = new ORSResponse(true);
+
 		ResourceBundle rb = ResourceBundle.getBundle("application");
-		//String path = context.getRealPath("C:\\Users\\dell\\JaspersoftWorkspace\\MyReports\\ORS10.jrxml");
+		// String path =
+		// context.getRealPath("C:\\Users\\dell\\JaspersoftWorkspace\\MyReports\\ORS10.jrxml");
 		String path = context.getRealPath(rb.getString("jasper"));
 
 		Connection con = null;
+
 		JasperReport jasperReport = JasperCompileManager.compileReport(rb.getString("jasper"));
 		Map<String, Object> map = new HashMap<String, Object>();
+
 		this.sessionFactory = entityManager.getEntityManagerFactory().unwrap(SessionFactory.class);
-		con = sessionFactory.getSessionFactoryOptions().getServiceRegistry().getService(ConnectionProvider.class).getConnection();
+		con = sessionFactory.getSessionFactoryOptions().getServiceRegistry().getService(ConnectionProvider.class)
+				.getConnection();
+
 		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, map, con);
+
 		byte[] pdf = JasperExportManager.exportReportToPdf(jasperPrint);
 		response.setContentType("application/pdf");
 		response.getOutputStream().write(pdf);
@@ -97,7 +105,5 @@ public class JasperCtl extends BaseCtl<MarksheetForm, MarksheetDTO, MarksheetSer
 		System.out.println("Thanks");
 		// return MediaType.APPLICATION_JSON_VALUE;
 	}
-	
-	
 
 }

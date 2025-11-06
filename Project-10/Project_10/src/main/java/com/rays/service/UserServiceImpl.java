@@ -52,7 +52,6 @@ public class UserServiceImpl extends BaseServiceImpl<UserDTO, UserDAOInt> implem
 	/**
 	 * Authenticate a user
 	 */
-	@Override
 	public UserDTO authenticate(String loginId, String password) {
 		System.out.println("Authenticate in UserServiceImp");
 		UserDTO dto = findByLoginId(loginId, null);
