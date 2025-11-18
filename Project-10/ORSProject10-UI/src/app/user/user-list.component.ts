@@ -64,8 +64,5 @@ export class UserListComponent extends BaseListCtl {
 
       console.log(error);
     });
-
   }
-
-
 }

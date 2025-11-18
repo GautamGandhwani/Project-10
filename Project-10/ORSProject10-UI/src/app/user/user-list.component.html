@@ -99,16 +99,17 @@ background-size: cover;width:auto;
             <tbody>
               <tr *ngFor="let m of form.list; let i = index" align="center">
                 <td> <input type="checkbox" #checkboxes (change)="checklistUpdate()" [disabled]="m.roleName=='Admin'"
-                    name="list_name" id="{{m.id}}" value="{{isMasterSel}}"/>
+                    name="list_name" id="{{m.id}}" value="{{isMasterSel}}" />
                 </td>
                 <td> {{(form.pageNo*5)+i+ 1}} </td>
 
 
                 <td>
-                  <div *ngIf="m.imageId" >
-                    <img src="http://localhost:8084/User/profilePic/{{m.id}}" height="55px" width="80px" style="border-radius: 50%;">
+                  <div *ngIf="m.imageId">
+                    <img src="http://localhost:8084/User/profilePic/{{m.id}}" height="55px" width="80px"
+                      style="border-radius: 50%;">
                   </div>
-                  <div *ngIf="!m.imageId" >
+                  <div *ngIf="!m.imageId">
                     <img src="../../assets/files/default.jpg" height="55px" width="80px" style="border-radius: 50%;">
                   </div>
                 </td>
@@ -137,9 +138,6 @@ background-size: cover;width:auto;
                 </td>
               </tr>
 
-
-
-
             </tbody>
 
           </table>
@@ -150,6 +148,13 @@ background-size: cover;width:auto;
                   translate
                   }} </button>
               </td>
+
+
+              <div>
+                <a class="btn btn-warning mr-1" [routerLink]="['/userlist']" (click)="exit()">
+                  {{ 'Reset' | translate }}
+                </a>
+              </div>
 
               <td *ngIf="form.list.length!=0" style="width: 50%;"></td>
               <td *ngIf="form.list.length==0" style="width: 50%;"><a class="btn btn-warning mr-1"

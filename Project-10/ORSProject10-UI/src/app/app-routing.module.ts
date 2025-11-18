@@ -19,6 +19,7 @@ import { UserComponent } from './user/user.component';
 import { RoleComponent } from './role/role.component';
 import { CourseComponent } from "./course/course.component";
 import { SubjectComponent } from "./subject/subject.component"
+import { Subject, from } from 'rxjs';
 import { RoleListComponent } from './role/role-list.component';
 import { CourseListComponent } from "./course/course-list.component";
 import { FacultyComponent } from "./faculty/faculty.component";
@@ -74,9 +75,6 @@ const routes: Routes = [
         component: CustomerComponent
 
     },
-
-
-
 
     // ***********PRODUCT*************
 
@@ -299,11 +297,6 @@ const routes: Routes = [
 
 
     },
-
-
-
-
-
 ];
 
 @NgModule({
