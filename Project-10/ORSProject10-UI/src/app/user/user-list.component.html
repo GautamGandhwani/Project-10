@@ -103,7 +103,6 @@ background-size: cover;width:auto;
                 </td>
                 <td> {{(form.pageNo*5)+i+ 1}} </td>
 
-
                 <td>
                   <div *ngIf="m.imageId">
                     <img src="http://localhost:8084/User/profilePic/{{m.id}}" height="55px" width="80px"
@@ -124,8 +123,7 @@ background-size: cover;width:auto;
                 <td>
 
                   <button class="fa fa-edit text-primary " id="nnn" [disabled]="m.roleName=='Admin'"
-                    (click)="forward( '/user/' +  m.id)" style="
-                  cursor: pointer;"></button>
+                    (click)="forward( '/user/' +  m.id)" style="cursor: pointer;"></button>
                   <!-- <a (click)="forward( '/user/' +  m.id)" style="
                     cursor: pointer;">
                     <i class="fa fa-edit text-primary"></i>
