@@ -62,7 +62,7 @@ public class UserCtl extends BaseCtl<UserForm, UserDTO, UserServiceInt> {
 
 	@GetMapping("/preload")
 	public ORSResponse preload() {
-		System.out.println("inside preload Rahul");
+		System.out.println("inside preload Gautam");
 		ORSResponse res = new ORSResponse(true);
 		RoleDTO dto = new RoleDTO();
 		dto.setStatus(RoleDTO.ACTIVE);
@@ -122,7 +122,7 @@ public class UserCtl extends BaseCtl<UserForm, UserDTO, UserServiceInt> {
 	 */
 	@PostMapping("changepassword")
 	public ORSResponse changePassword(@RequestBody @Valid ChangePasswordForm form, BindingResult bindingResult) {
-		System.out.println("Inside changepassword in userctl......vipin");
+		System.out.println("Inside changepassword in userctl......Gautam");
 
 		
 		ORSResponse res = validate(bindingResult);
@@ -275,7 +275,7 @@ public class UserCtl extends BaseCtl<UserForm, UserDTO, UserServiceInt> {
 				out.write(attachmentDTO.getDoc());
 				out.close();
 				
-				System.out.println("Profile pic......rahul");
+				System.out.println("Profile pic......Gautam");
 			} else {
 				response.getWriter().write("ERROR: File not found");
 			}

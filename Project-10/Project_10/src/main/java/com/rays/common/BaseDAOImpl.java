@@ -189,7 +189,7 @@ public abstract class BaseDAOImpl<T extends BaseDTO> implements BaseDAOInt<T> {
 		populate(dto, userContext);
 		System.out.println("Dto start ");
 		System.out.println(dto);
-		System.out.println("before calling persist method in base dao......amit");
+		System.out.println("before calling persist method in base dao......Gautam");
 		entityManager.persist(dto);
 
 		return dto.getId();
@@ -307,7 +307,7 @@ public abstract class BaseDAOImpl<T extends BaseDTO> implements BaseDAOInt<T> {
 	protected List<Order> getOrderByClause(T dto, CriteriaBuilder builder, Root<T> qRoot) {
 
 		// Apply Order by clause
-		System.out.println("baseDAO in getOrderByClause.......vipin ");
+		System.out.println("baseDAO in getOrderByClause.......Gautam");
 		LinkedHashMap<String, String> map = dto.orderBY();
 
 		List<Order> orderBys = new ArrayList<Order>();

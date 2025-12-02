@@ -41,7 +41,7 @@ public abstract class BaseServiceImpl<T extends BaseDTO, D extends BaseDAOInt<T>
 
 	@Transactional(readOnly = true)
 	public List<T> search(T dto, int pageNo, int pageSize, UserContext userContext) {
-		System.out.println("Search run in Baseservice......Rahul");
+		System.out.println("Search run in Baseservice......Gautam");
 		return baseDao.search(dto, pageNo, pageSize, userContext);
 	}
 	
@@ -54,7 +54,7 @@ public abstract class BaseServiceImpl<T extends BaseDTO, D extends BaseDAOInt<T>
 
 	@Transactional(readOnly = true)
 	public List<T> search(T dto, UserContext userContext) {
-		System.out.println("baseservice Search run.....rahul ");
+		System.out.println("baseservice Search run.....Gautam");
 		return baseDao.search(dto, userContext);  
 		
 	}
@@ -62,7 +62,7 @@ public abstract class BaseServiceImpl<T extends BaseDTO, D extends BaseDAOInt<T>
 	@Transactional(readOnly = false)
 	public long add(T dto, UserContext userContext) throws DuplicateRecordException {
 		// check duplicate
-		System.out.println("add() run in BaseSecrvice......rahul ");
+		System.out.println("add() run in BaseSecrvice......Gautam");
 		long pk = baseDao.add(dto, userContext);
 		return pk;
 	}
@@ -74,7 +74,7 @@ public abstract class BaseServiceImpl<T extends BaseDTO, D extends BaseDAOInt<T>
 
 	@Transactional(propagation = Propagation.REQUIRED)
 	public long save(T dto, UserContext userContext) throws DuplicateRecordException {
-		System.out.println("Save() run in Baseservice..amit");
+		System.out.println("Save() run in Baseservice...Gautam");
 		Long id = dto.getId();
 		System.out.println(dto.getId());
 		if (id != null && id > 0) {
@@ -98,5 +98,4 @@ public abstract class BaseServiceImpl<T extends BaseDTO, D extends BaseDAOInt<T>
 		log.debug("Base Service delete End");
 		return dto;
 	}
-
 }

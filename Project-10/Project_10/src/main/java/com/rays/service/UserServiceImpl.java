@@ -73,7 +73,6 @@ public class UserServiceImpl extends BaseServiceImpl<UserDTO, UserDAOInt> implem
 	/**
 	 * Changes password of logged-in user
 	 */
-	@Override
 	public UserDTO changePassword(String loginId, String oldPassword, String newPassword, UserContext userContext) {
 
 		UserDTO dto = findByLoginId(loginId, null);
@@ -101,7 +100,6 @@ public class UserServiceImpl extends BaseServiceImpl<UserDTO, UserDAOInt> implem
 	/**
 	 * Forgot password
 	 */
-	@Override
 	public UserDTO forgotPassword(String loginId) {
 		System.out.println("forgetPassword in UserService");
 		UserDTO dto = findByLoginId(loginId, null);
@@ -134,7 +132,6 @@ public class UserServiceImpl extends BaseServiceImpl<UserDTO, UserDAOInt> implem
 	/**
 	 * Register new user
 	 */
-	@Override
 	public UserDTO register(UserDTO dto) {
 
 		UserContext userContext = new UserContext();
@@ -161,7 +158,6 @@ public class UserServiceImpl extends BaseServiceImpl<UserDTO, UserDAOInt> implem
 		return dto;
 	}
 
-	@Override
 	public UserDTO findByEmail(String email, UserContext userContext) {
 		return userDAO.findByEmail("email", email, userContext);
 
