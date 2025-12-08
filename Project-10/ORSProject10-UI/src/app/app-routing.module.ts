@@ -100,6 +100,7 @@ const routes: Routes = [
         component: LoaderComponent
 
     },
+    //====================LOGIN====================
     {
         path: 'login',
         component: LoginComponent
@@ -122,6 +123,8 @@ const routes: Routes = [
         path: 'signup',
         component: SignUpComponent
     },
+
+    //================================================
     {
         path: 'message',
         component: MessageComponent,
@@ -136,6 +139,7 @@ const routes: Routes = [
         component: MessageListComponent
 
     },
+    //=======================MARKSHEET======================
     {
         path: 'marksheet',
         component: MarksheetComponent
@@ -161,6 +165,8 @@ const routes: Routes = [
         component: GetmarksheetComponent
 
     },
+
+    //==================COLLEGE======================
     {
         path: 'college',
         component: CollegeComponent
@@ -176,6 +182,8 @@ const routes: Routes = [
         component: CollegeListComponent
 
     },
+
+    //====================STUDENT====================
     {
         path: 'student',
         component: StudentComponent
@@ -191,6 +199,8 @@ const routes: Routes = [
         component: StudentListComponent
 
     },
+
+    //===================USER===============
     {
         path: 'user',
         component: UserComponent
@@ -206,6 +216,8 @@ const routes: Routes = [
         component: UserListComponent
 
     },
+
+    //======================ROLE=====================
     {
         path: 'role',
         component: RoleComponent
@@ -221,6 +233,8 @@ const routes: Routes = [
         component: RoleComponent
 
     },
+
+    //======================COURSE=====================
     {
         path: 'course',
         component: CourseComponent
@@ -236,6 +250,8 @@ const routes: Routes = [
         component: CourseComponent
 
     },
+
+    //=====================FACLTY======================
     {
 
         path: 'faculty',
@@ -252,6 +268,8 @@ const routes: Routes = [
         component: FacultyComponent
 
     },
+
+    //=================TIMETABLE======================
     {
         path: 'timetable',
         component: TimetableComponent
@@ -268,6 +286,8 @@ const routes: Routes = [
         component: TimetableComponent
 
     },
+
+    //======================SUBJECT==================
     {
         path: 'subject',
         component: SubjectComponent
@@ -283,6 +303,8 @@ const routes: Routes = [
         component: SubjectComponent
 
     },
+
+    //===================================================
     {
         path: 'myprofile',
         component: MyprofileComponent
