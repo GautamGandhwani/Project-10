@@ -178,9 +178,7 @@ public class UserCtl extends BaseCtl<UserForm, UserDTO, UserServiceInt> {
 			res.setSuccess(true);
 			res.addMessage("Hello " + fDTO.getFirstName() + " " + fDTO.getLastName()
 					+ " ! Your password has been sent on your email.");
-
 		}
-
 		return res;
 	}
 

@@ -267,7 +267,6 @@ export class BaseCtl implements OnInit {
         _self.form.message = "Data is deleted";
         
         
-
         if (callback) {
           console.log('Response Success and now Calling Callback');
           _self.form.list = res.result.data;
