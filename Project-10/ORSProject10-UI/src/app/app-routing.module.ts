@@ -39,6 +39,8 @@ import { ProductListComponent } from './product/product-list.component';
 import { CustomerComponent } from './customer/customer.component';
 import { CustomerlistComponent } from './customer/customer-list.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { CompensationComponent } from './compensation/compensation.component';
+import { CompensationlistComponent } from './compensation/compensationlist.component';
 
 
 
@@ -56,7 +58,21 @@ const routes: Routes = [
     // ***********EMPLOYEE*************
     {
         path: 'employee',
-        component:EmployeeComponent
+        component: EmployeeComponent
+    },
+
+    //************Compensation************
+    {
+        path: 'compensation',
+        component: CompensationComponent
+    },
+    {
+        path: 'compensationlist',
+        component: CompensationlistComponent
+    },
+    {
+        path: 'compensation/:id',
+        component: CompensationComponent
     },
     // ***********CUSTOMER*************
 

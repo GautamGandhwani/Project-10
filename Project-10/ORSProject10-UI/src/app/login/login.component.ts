@@ -91,6 +91,7 @@ export class LoginComponent implements OnInit {
 
 
   signIn() {
+
     
     var _self = this;   
     this.form.error = false;
@@ -106,7 +107,6 @@ export class LoginComponent implements OnInit {
       //_self.form.loginId = res.result.loginId;
       if (_self.dataValidator.isNotNullObject(res.result.message)) {
         _self.form.message = res.result.message;
-        console.log('messageeeeeeeeee',res.result.message);
       }
 
       _self.form.error = !res.success;
@@ -138,5 +138,4 @@ export class LoginComponent implements OnInit {
       }
     });
   }
-
 }

@@ -71,7 +71,7 @@ export class HttpServiceService {
     });
   }
 
-  post(endpoint, bean, callback) {
+  post(endpoint, bean, callback,errorCallback?) {
     if (this.isLogout()) {
       console.log('inside isLogout return true')
       return true;
@@ -80,13 +80,26 @@ export class HttpServiceService {
       console.log(data);
       callback(data);
 
-    }, error => {
-
+    }, (error) => {
       console.log('ORS Error--', error);
-    }); ``
+      let msg = 'Service is currently unavailable';
+
+      if (error && error.error && error.error.result && error.error.result.message) {
+        msg = error.error.result.message;
+      }
+
+      const errorRes = {
+        success: false,
+        result: {
+          message: msg
+        }
+      };
+
+      callback(errorRes);
+
+      if (errorCallback) {
+        errorCallback(error);
+      }
+    });
   }
-
-
 }
-
-

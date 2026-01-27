@@ -58,6 +58,8 @@ import { CustomerComponent } from './customer/customer.component';
 import { CustomerlistComponent } from './customer/customer-list.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeListComponent } from './employee/employee-list.component';
+import { CompensationComponent } from './compensation/compensation.component';
+import { CompensationlistComponent } from './compensation/compensationlist.component';
 
 
 
@@ -113,6 +115,8 @@ export function myHttpLoader(http: HttpClient) {
     CustomerlistComponent,
     EmployeeComponent,
     EmployeeListComponent,
+    CompensationComponent,
+    CompensationlistComponent,
     
   ],
   imports: [
